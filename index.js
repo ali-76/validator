@@ -22,16 +22,3 @@ app.use(ErrorHandler);
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
-
-
-// try {
-//   const error = validationResult(req)
-//   let obj = {}
-//   error?.errors?.forEach(err => {
-//     obj[err.param] = err.msg;
-//   });
-//   res.send(obj);
-// } catch (error) {
-//   next(error)
-// }
-
