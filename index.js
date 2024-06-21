@@ -10,7 +10,7 @@ app.post("/login",loginValidator(), (req, res,next) => {
   const error = validationResult(req)
   let obj = {}
   error?.errors.forEach(err =>{
-    obj[err.param] += err.msg
+    obj[err.param] = err.msg
   })
   res.send(obj)
 
