@@ -1,6 +1,6 @@
 const express = require("express");
 const { NotFoundError, ErrorHandler } = require("./utils/errorHandler");
-const {validationResult, Result} = require("express-validator")
+const {validationResult} = require("express-validator")
 const {loginValidator} = require("./validator/auth.validator")
 const app = express();
 app.use(express.json());
